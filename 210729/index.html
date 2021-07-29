@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .hero {
+            height: 80vh;
+            background-color: antiquewhite;
+        }
+
+        .hero-box {
+            width: 90%;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, .6);
+        }
+
+        .hero-item {
+            height: 40px;
+            background-color: lightgray;
+            border-radius: 3px;
+            line-height: 40px;
+        }
+
+        .hero-button {
+            background: rgb(250, 114, 3);
+            color: white;
+            cursor: pointer;
+        }
+
+        .icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: grey;
+
+        }
+
+        .sec-feature {
+            background-color: lightgray;
+        }
+
+        button {
+            background-color: darkblue !important;
+            color: white;
+            border-color: darkblue !important;
+        }
+
+        .swiper-slide {
+            width: 80px;
+        }
+
+
+        .slide {
+            height: 200px;
+            background-color: lightblue;
+        }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid hero d-flex justify-content-center align-items-center">
+        <div class="hero-box d-flex align-content-center flex-wrap py-5">
+            <div class="hero-row w-100 d-flex justify-content-center align-items-center mb-2">
+                <h2>Title Here</h2>
+            </div>
+            <div class="hero-row d-flex mb-2 flex-wrap w-100">
+                <div class="col-6 col-md-4 my-1 px-1">
+                    <div class="hero-item px-1">Neighborhood</div>
+                </div>
+                <div class="col-6 col-md-4 my-1 px-1">
+                    <div class="hero-item px-1">Neighborhood</div>
+                </div>
+                <div class="col-6 col-md-4 my-1 px-1">
+                    <div class="hero-item px-1">Neighborhood</div>
+                </div>
+                <div class="col-6 col-md-4 my-1 px-1">
+                    <div class="hero-item px-1">Neighborhood</div>
+                </div>
+                <div class="col-6 col-md-4 my-1 px-1">
+                    <div class="hero-item px-1">Neighborhood</div>
+                </div>
+                <div class="col-6 col-md-4 my-1 px-1">
+                    <div class="hero-item hero-button text-center  px-1">Search Result</div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="sec-welcome container py-5">
+        <div class="row text-center">
+            <h2>Welcome to Ruffe Real Estate</h2>
+        </div>
+        <div class="row text-center">
+            <p>Your Ultimate Partner</p>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="icon mx-auto"></div>
+                <div class="title mx-auto fw-bold text-center">Create An Account</div>
+                <div class="des mx-auto text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis.
+                </div>
+            </div>
+            <div class="col">
+                <div class="icon mx-auto"></div>
+                <div class="title mx-auto fw-bold text-center">Create An Account</div>
+                <div class="des mx-auto text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis.
+                </div>
+            </div>
+            <div class="col">
+                <div class="icon mx-auto"></div>
+                <div class="title mx-auto fw-bold text-center">Create An Account</div>
+                <div class="des mx-auto text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis.
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="sec-feature container-fluid py-5">
+        <div class="row text-center">
+            <h2>NEW & FEATURED PROPERTY</h2>
+        </div>
+        <div class="row text-center">
+            <p>Find and book your future destination</p>
+        </div>
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="d-grid col-6 col-md-3 mx-auto mt-3"><button class="btn btn-primary" type="button">Browse
+                More</button></div>
+    </div>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            grabCursor: true,
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+
+                640: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                },
+                768: {
+                    slidesPerView: 6,
+                    spaceBetween: 40
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
